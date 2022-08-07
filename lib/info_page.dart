@@ -25,7 +25,7 @@ class CategoryBarYellow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          color: Colors.amber[400], borderRadius: BorderRadius.circular(10)),
+          color: Colors.amber[400], borderRadius: BorderRadius.circular(8)),
       padding: EdgeInsets.all(7),
       child: Text(
         value,
