@@ -15,9 +15,10 @@ class MainPage extends StatelessWidget {
           children: marvelDataList.map((data) {
             return InkWell(
               onTap: () {
+                final MarvelData marvelData = data;
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return InfoPage();
+                    return InfoPage(marvelData: marvelData);
                   },
                 ));
               },

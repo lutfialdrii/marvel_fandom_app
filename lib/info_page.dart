@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:marvel_fandom_app/model/data.dart';
 
 class InfoPage extends StatelessWidget {
-  const InfoPage({Key? key}) : super(key: key);
+  final MarvelData marvelData;
+  const InfoPage({Key? key, required this.marvelData}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +11,7 @@ class InfoPage extends StatelessWidget {
       backgroundColor: Colors.amber,
       body: Stack(children: [
         AppBar(
-          title: Text("Dr Strange"),
+          title: Text(marvelData.name),
         ),
         SafeArea(
           child: Center(
@@ -23,11 +25,11 @@ class InfoPage extends StatelessWidget {
                 children: [
                   Container(
                       height: 220,
-                      child: Image.asset("assets/images/intro.jpeg")),
+                      child: Image.asset(marvelData.imageAsset)),
                   Container(
                       padding: EdgeInsets.only(top: 10, bottom: 8),
                       child: Text(
-                        "Dr Strange",
+                        marvelData.name,
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
                       )),
@@ -50,7 +52,7 @@ class InfoPage extends StatelessWidget {
                     child: Column(
                       children: [
                         Text(
-                          "He was involved a car crash that so injured his hands that it stripped him of his fine motor skills, and when that happened, he became desperate to regain them and searched the globe for a cure, squandering a fortune to that end. And one was offered to him--not to cure his hands, but instead to cure his soul.",
+                          marvelData.description,
                           textAlign: TextAlign.center,
                           style: TextStyle(),
                         )
