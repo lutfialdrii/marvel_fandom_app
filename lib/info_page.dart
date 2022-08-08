@@ -67,6 +67,19 @@ class InfoPage extends StatelessWidget {
             ),
           ),
         ),
+        Align(
+          alignment: Alignment(0.88, 0.95),
+          child: Container(
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(20)),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  _FavButton(),
+                  IconButton(onPressed: null, icon: Icon(Icons.share))
+                ],
+              )),
+        )
       ]),
     );
   }
@@ -85,6 +98,41 @@ class CategoryBarYellow extends StatelessWidget {
       child: Text(
         value,
         style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+      ),
+    );
+  }
+}
+
+class _FavButton extends StatefulWidget {
+  const _FavButton({Key? key}) : super(key: key);
+
+  @override
+  State<_FavButton> createState() => __FavButtonState();
+}
+
+class __FavButtonState extends State<_FavButton> {
+  bool isFav = false;
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      onPressed: () {
+        setState(() {
+          showDialog(
+            context: context,
+            builder: (context) {
+              if (isFav == false) {
+                isFav = true;
+                return AlertDialog(content: Text("Favorite Added"));
+              } else {
+                return AlertDialog(content: Text("Favorite Added"));
+              }
+            },
+          );
+        });
+      },
+      icon: Icon(
+        isFav ? Icons.favorite : (Icons.favorite_border),
+        color: Colors.red,
       ),
     );
   }
