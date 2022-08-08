@@ -27,13 +27,18 @@ class InfoPage extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Container(
-                        height: 220, child: Image.asset(marvelData.imageAsset)),
+                        height: 220, child: Image.network(marvelData.imageAsset)),
                     Container(
-                        padding: EdgeInsets.only(top: 10, bottom: 8),
-                        child: Text(
-                          marvelData.name,
-                          style: TextStyle(
-                              fontSize: 20, fontWeight: FontWeight.bold),
+                        padding: EdgeInsets.only(top: 10),
+                        child: Column(
+                          children: [
+                            Text(
+                              marvelData.name,
+                              style: TextStyle(
+                                  fontSize: 20, fontWeight: FontWeight.bold),
+                            ),
+                            Text("(${marvelData.aliasName})",style: TextStyle(fontSize: 12),)
+                          ],
                         )),
                     Container(
                         padding: EdgeInsets.only(top: 10, bottom: 8),
