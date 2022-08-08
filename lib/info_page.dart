@@ -15,51 +15,54 @@ class InfoPage extends StatelessWidget {
         ),
         SafeArea(
           child: Center(
-            child: Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
-              padding: EdgeInsets.symmetric(vertical: 20),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20), color: Colors.white),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Container(
-                      height: 220,
-                      child: Image.asset(marvelData.imageAsset)),
-                  Container(
-                      padding: EdgeInsets.only(top: 10, bottom: 8),
-                      child: Text(
-                        marvelData.name,
-                        style: TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold),
-                      )),
-                  Container(
-                      padding: EdgeInsets.only(top: 10, bottom: 8),
-                      child: Text(
-                        "Category",
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      )),
-                  CategoryBarYellow("Savage Avengers (Earth-616)"),
-                  SizedBox(height: 10),
-                  Container(
-                      padding: EdgeInsets.only(top: 10, bottom: 8),
-                      child: Text(
-                        "Description",
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      )),
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 30),
-                    child: Column(
-                      children: [
-                        Text(
-                          marvelData.description,
-                          textAlign: TextAlign.center,
-                          style: TextStyle(),
-                        )
-                      ],
-                    ),
-                  )
-                ],
+            child: SingleChildScrollView(
+              child: Container(
+                height: 520,
+                margin: EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.symmetric(vertical: 20),
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    color: Colors.white),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Container(
+                        height: 220, child: Image.asset(marvelData.imageAsset)),
+                    Container(
+                        padding: EdgeInsets.only(top: 10, bottom: 8),
+                        child: Text(
+                          marvelData.name,
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.bold),
+                        )),
+                    Container(
+                        padding: EdgeInsets.only(top: 10, bottom: 8),
+                        child: Text(
+                          "Category",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )),
+                    CategoryBarYellow(marvelData.categories),
+                    SizedBox(height: 10),
+                    Container(
+                        padding: EdgeInsets.only(top: 10, bottom: 8),
+                        child: Text(
+                          "Description",
+                          style: TextStyle(fontWeight: FontWeight.bold),
+                        )),
+                    Expanded(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(40, 0, 40, 10),
+                        child: SingleChildScrollView(
+                          child: Text(
+                            marvelData.description,
+                            textAlign: TextAlign.center,
+                            style: TextStyle(),
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ),
