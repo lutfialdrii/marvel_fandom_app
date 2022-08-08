@@ -15,9 +15,11 @@ class MainPage extends StatelessWidget {
           children: marvelDataList.map((data) {
             return InkWell(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return InfoPage();
-                },));
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return InfoPage();
+                  },
+                ));
               },
               child: Card(
                 shape: BeveledRectangleBorder(
