@@ -27,7 +27,8 @@ class InfoPage extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Container(
-                        height: 220, child: Image.network(marvelData.imageAsset)),
+                        height: 220,
+                        child: Image.network(marvelData.imageAsset)),
                     Container(
                         padding: EdgeInsets.only(top: 10),
                         child: Column(
@@ -37,7 +38,10 @@ class InfoPage extends StatelessWidget {
                               style: TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
                             ),
-                            Text("(${marvelData.aliasName})",style: TextStyle(fontSize: 12),)
+                            Text(
+                              "(${marvelData.aliasName})",
+                              style: TextStyle(fontSize: 12),
+                            )
                           ],
                         )),
                     Container(
@@ -129,7 +133,8 @@ class __FavButtonState extends State<_FavButton> {
                 isFav = true;
                 return AlertDialog(content: Text("Favorite Added"));
               } else {
-                return AlertDialog(content: Text("Favorite Added"));
+                isFav = false;
+                return AlertDialog(content: Text("Favorite Removed"));
               }
             },
           );
