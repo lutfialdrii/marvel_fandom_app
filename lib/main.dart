@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:marvel_fandom_app/intro_app.dart';
-import 'package:marvel_fandom_app/main_pages.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +12,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MainPage(),
+      theme: ThemeData(fontFamily: 'Mouse'),
+      home: const IntroApp(),
     );
   }
 }

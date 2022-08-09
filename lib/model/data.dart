@@ -38,7 +38,7 @@ var marvelDataList = [
       imageAsset:
           "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c56d75ad-cb4b-40c1-b67e-3fd8f3f0cc61/da1uqpt-31510761-45eb-48e7-bdb8-af233d4c9a1c.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2M1NmQ3NWFkLWNiNGItNDBjMS1iNjdlLTNmZDhmM2YwY2M2MVwvZGExdXFwdC0zMTUxMDc2MS00NWViLTQ4ZTctYmRiOC1hZjIzM2Q0YzlhMWMucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.yKUfk-n_AJZ5t8UstbEcNkSglCiT_ML8NZ3O7d3m5q8",
       description:
-          "Cpt. Steven Steve Rogers a.k.a. Captain America, the First Avenger, was rejected by the U.S. Army during World War II due to numerous health problems. He ultimately volunteered for Project Rebirth where he received the Super-Soldier Serum developed by Dr. Abraham Erskine. The serum greatly enhanced his frail body to the peak of human physicality. As the Sentinel of Liberty, alongside his best friend Bucky Barnes and the Invaders, Rogers and others helped the allies win the war, but not before he was lost at sea and frozen in ice in a form of suspended animation for decades. He was thawed out in the modern age to continue the battle alongside his new allies the Avengers. Cap is loyal to no politician or government and instead upholds the timeless principles of freedom, equality and justice of the American Dream.",
+          "Cpt. Steven Steve Rogers a.k.a. Captain America, the First Avenger, was rejected by the U.S. Army during World War II due to numerous health problems. He ultimately volunteered for Project Rebirth where he received the Super-Soldier Serum developed by Dr. Abraham Erskine. The serum greatly enhanced his frail body to the peak of human physicality. As the Sentinel of Liberty, alongside his best friend Bucky Barnes and the Invaders, Rogers and others helped the allies win the war",
       categories: "Avengers (Earth-616)",
       aliasName: "Cpt. Steven Steve Rogers"),
   MarvelData(
@@ -46,7 +46,7 @@ var marvelDataList = [
       imageAsset:
           "https://i.pinimg.com/564x/4a/aa/77/4aaa7759aaaf34a7a17e688719002721.jpg",
       description:
-          "Thor is the God of Thunder, a member of the race known as the Asgardians, a group of humanoid beings from the pocket dimension of Asgard, the Realm Eternal. Thor is the son of Odin, the All-Father and king of Asgard. He was worshiped by the humans known as Vikings and became part of Norse Mythology.[ Armed with his enchanted Uru hammer Mjolnir, which helps him to channel his godly energies, he became the mightiest warrior in the Ten Realms. When his irresponsible and impetuous behavior became too much, Odin sent him to Midgard (more commonly known as Earth) as a disabled mortal medical student named Donald Blake, stripped of his memory. After learning humility, he regained his memory as well as his godly powers.Thor went on to become a champion for Midgard as well as one of the founding members of the Avengers, Earth's Mightiest Heroes.",
+          "Thor is the God of Thunder, a member of the race known as the Asgardians, a group of humanoid beings from the pocket dimension of Asgard, the Realm Eternal. Thor is the son of Odin, the All-Father and king of Asgard. He was worshiped by the humans known as Vikings and became part of Norse Mythology.[ Armed with his enchanted Uru hammer Mjolnir, which helps him to channel his godly energies, he became the mightiest warrior in the Ten Realms. When his irresponsible and impetuous behavior became too much, Odin sent him to Midgard ",
       categories: "Heralds of Galactus (Earth-616)",
       aliasName: "Thor Odinson"),
   MarvelData(
@@ -54,7 +54,7 @@ var marvelDataList = [
       imageAsset:
           "https://i.pinimg.com/564x/da/ff/46/daff467b4d9b9d978d191bccce6884dd.jpg",
       description:
-          "Loki Laufeyson[1] is the Trickster God,[1] God of Mischief,[4] Evil,[5] and Lies[7] a member of the monstrous Frost Giants of Jotunheim but was adopted and raised among the Asgardians a group of humanoid beings from the pocket dimension of Asgard, the Realm Eternal.[18] Born smaller than the rest of his race and rejected by his father Laufey, he was adopted by the All-Father; Odin following the war. He was taken back to Asgard to be raised alongside his adopted brother Thor.[19] He was worshiped by the humans known as Vikings and became part of Norse Mythology.[10] Loki grew jealous of his brother after learning his true origin and schemed against him and Asgard.[20] His later cosmic meddling led to the formation of the Avengers, Earth's Mightiest Heroes.[5]",
+          "Loki Laufeyson[1] is the Trickster God,[1] God of Mischief,[4] Evil,[5] and Lies[7] a member of the monstrous Frost Giants of Jotunheim but was adopted and raised among the Asgardians a group of humanoid beings from the pocket dimension of Asgard, the Realm Eternal.[18] Born smaller than the rest of his race and rejected by his father Laufey, he was adopted by the All-Father; Odin following the war. He was taken back to Asgard to be raised alongside his adopted brother Thor.[19] He was worshiped by the humans known as Vikings and became part of Norse Mythology.",
       categories: "Cabal (Dark Illuminati) (Earth-616)",
       aliasName: "Loki Laufeyson"),
   MarvelData(
@@ -70,7 +70,7 @@ var marvelDataList = [
       imageAsset:
           "https://i.pinimg.com/564x/38/f3/1e/38f31e43f9c0502485927a3b86553dd7.jpg",
       description:
-          "Dr. Bruce Banner, Ph.D.[4] a.k.a. the Hulk is an American theoretical physicist, famed for his work into the studies of nuclear physics and gamma radiation.[55] He was recruited by General Thaddeus Thunderbolt Ross and the US Army to develop the first Gamma Bomb. During its first live test he was bombarded with a massive dose of gamma rays while saving Rick Jones, a kid who was out on the test site. He was mutated into a green behemoth, the living personification of rage, fueled by pure physical strength and would come to be known as the nearly mindless Incredible Hulk. Fearful of the damage that Hulk could inflict, as well as fleeing from the military, he went on the run.[56] He later found a home among the Avengers, Earth's Mightiest Heroes, for a short time.[36]",
+          "Dr. Bruce Banner, Ph.D.[4] a.k.a. the Hulk is an American theoretical physicist, famed for his work into the studies of nuclear physics and gamma radiation.[55] He was recruited by General Thaddeus Thunderbolt Ross and the US Army to develop the first Gamma Bomb.",
       categories: "Cosmic Avengers (Earth-616)",
       aliasName: "Dr. Robert Bruce Banner"),
   MarvelData(

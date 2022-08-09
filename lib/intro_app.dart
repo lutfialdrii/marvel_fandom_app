@@ -8,25 +8,38 @@ class IntroApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.only(bottom: 20),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Image.asset('assets/images/intro.jpeg'),
-            Text("Hello Marvel Mania!")
-          ],
+        padding: const EdgeInsets.only(bottom: 20),
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Image.asset('assets/images/intro.jpeg'),
+              LayoutBuilder(
+                builder: (BuildContext context, BoxConstraints constraints) {
+                  if (constraints.maxHeight >= 500) {
+                    return Image.asset(
+                      'assets/images/intro.jpeg',
+                      height: 300,
+                    );
+                  } else {
+                    return Image.asset('assets/images/intro.jpeg');
+                  }
+                },
+              ),
+              const Text("Hello Marvel Mania!")
+            ],
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.pushReplacement(context, MaterialPageRoute(
             builder: (context) {
-              return MainPage();
+              return const MainPage();
             },
           ));
         },
-        child: Icon(Icons.keyboard_arrow_right),
+        child: const Icon(Icons.keyboard_arrow_right),
       ),
     );
   }
